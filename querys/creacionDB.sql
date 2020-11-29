@@ -1,6 +1,6 @@
 -- Create a new database called 'produccion'
 -- Connect to the 'master' database to run this snippet
-USE master
+/*USE master
 GO
 -- Drop the new database if it's exist already
 IF EXISTS (
@@ -11,7 +11,7 @@ IF EXISTS (
 DROP DATABASE produccion
 GO
 --Create new database 'produccion'
-CREATE DATABASE produccion
+CREATE DATABASE produccion*/
 GO
 --Seleccionar la base de datos 'produccion'
 USE produccion

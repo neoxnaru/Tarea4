@@ -189,4 +189,18 @@ export class TurnosController {
       .dataSource
       .execute(`EXEC pro.spCumplimientoTurnos ${parametro}`);
   }
+
+  @get('/turnos/vista1/')
+  async vista1(
+
+  ): Promise<any> {
+    let datos: any[] = await this.getVista();
+    return datos;
+  }
+
+  async getVista() {
+    return await this.turnosRepository.dataSource.execute(`SELECT *  FROM pro.vProductosMaquina`);
+    // EXEC spProcedure1 ${par1}
+  }
+
 }
